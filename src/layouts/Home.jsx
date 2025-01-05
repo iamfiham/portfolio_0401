@@ -1,16 +1,15 @@
+import HomeContent from '../components/HomeContent';
+import pic from '../assets/pic2.jpg';
+
 function Home() {
     return (
-        <div className=''>
-            <h1 className='font-semibold text-2xl my-8'>Product Designer creating thoughtful, intuitive interfaces.</h1>
-
-            <p className='text-base text-neutral-300'>
-                I’m Dale, a UK based product designer with over ten years of experience. I specialise in interface design for
-                mobile and web-based applications with a focus on simplicity & usability. <br /> <br /> I’m currently working at
-                WP Engine where I design some of the best products for WordPress including Advanced Custom Fields, WP Migrate and
-                WP Offload Media. <br /> <br /> Before WP Engine, I worked at BaseKit where I helped shape the future of website
-                builders and tools to help small businesses thrive online. In my spare time I also work on projects like Design
-                Vault and Good Aesthetic Club.
-            </p>
+        <div className='grid grid-cols-[4fr_3fr] gap-12 items-start'>
+            <HomeContent />
+            <div className='relative bg-blue-400'>
+                <span className='absolute inset-0  bg-gradient-to-r from-black to-65% to-transparent'></span>
+                <span className='absolute inset-0  bg-gradient-to-t from-black to-25% to-transparent'></span>
+                <img src={pic} alt='Home Content' />
+            </div>
         </div>
     );
 }
