@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Stacks from './layouts/Stacks';
 import image3 from './assets/image3.jpg';
+import About from './layouts/About';
 
 function App() {
     return (
@@ -11,6 +12,8 @@ function App() {
                 <NavBar />
                 <div className='h-40' />
                 <Home />
+                <div className='h-60' />
+                <About />
                 <div className='h-60' />
                 <Stacks />
             </div>
