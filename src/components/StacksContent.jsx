@@ -1,9 +1,8 @@
-import Tag from './Tag';
+import React from 'react';
 
-function HomeContent() {
+function StacksContent() {
     return (
-        <div className='grid'>
-            <Tag />
+        <div>
             <h1 className='font-semibold text-4xl text-neutral-200 leading-tight tracking-tight my-8'>
                 Web Developer crafting engaging, dynamic digital experiences.
             </h1>
@@ -17,4 +16,4 @@ function HomeContent() {
     );
 }
 
-export default HomeContent;
+export default StacksContent;
